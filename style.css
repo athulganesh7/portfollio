@@ -1,0 +1,300 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+}
+.logo{
+    width: 250px;
+}
+.list-item{
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.links:hover{
+    color: red;
+    text-decoration: underline;
+}
+.homeContent{
+    margin: 13% 0px 0px 8%;
+}
+#username{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: "Nerko One", cursive;
+}
+#lname{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(222, 151, 63);
+}
+#userDetails{
+    line-height: 1.2;
+}
+#download{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 30px;
+}
+.homeimages{
+    width: 45%;
+    height: 75%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+.group1{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 2s, left 1s;
+}
+.homeimages:hover #shape{
+    bottom: 60px;
+}
+.homeimages:hover #girl{
+left: 30%;
+}
+#about{
+    margin: 15% 8% 0px 8%;
+}
+
+.sectionHead{
+    text-align: center;
+}
+
+.mainHead{
+    font-size: 30px;
+}
+
+.subhead{
+    font-size: 20px;
+    color: green;
+}
+
+.aboutContent{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    align-items: center;
+}
+
+.Img1{
+    width: 100%;
+}
+
+.aboutcontent{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.informations{
+    margin-top: 1.3rem;
+}
+
+.infoBox{
+    margin-bottom: 10px;
+}
+
+.infoBox>span{
+    margin-left: 10px;
+}
+
+#skill{
+    margin: 15% 8% 0px 8%;
+}
+
+.skillcontent{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+
+    /* 1rem =16px */
+    gap: 2rem;
+    margin-top: 20px;
+
+}
+
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0px;
+}
+
+.barHead, .barPercent{
+    font-weight: 500px;
+    font-size: 1.3rem;
+
+}
+
+.basebar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.htmlbar{
+    background-color: blue;
+    width: 89%;
+}
+
+.cssbar{
+    background-color: blue;
+    width: 70%;
+}
+
+.jsbar{
+    background-color: blue;
+    width: 50%;
+}
+
+.reactbar{
+    background-color: blue;
+    width: 45%;
+}
+
+#contact{
+    margin: 8% 8% 0px 8%;
+}
+
+.iconcollection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    /* border: solid; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.brands{
+    color: black;
+    font-size: 2rem;
+}
+
+/* linear gradient , used to give gradient color , only works in background image ,  we can give direction or angle */
+
+.icon:hover{
+    background-image: linear-gradient(to bottom right, blue, red, orange);
+}
+
+.icon:hover .brands{
+    color: white;
+
+    /* css animations , use animation attribute and give a name , i give rotate as name , and 3sec time, and use @keyframes , name {} */
+    animation: rotate 3s;
+
+
+}
+
+/* start with 0% and end with 100% */
+
+/* here for rotate animation , i use transform attribute */
+
+@keyframes rotate{
+    0%{
+        transform: rotate(50deg);
+    }
+
+    40%{
+        transform: rotate(-50deg);
+    }
+
+    60%{
+        transform: rotate(30deg);
+    }
+
+    80%{
+        transform: rotate(-70deg);
+    }
+
+    100%{
+        transform: rotate(50deg);
+    }
+}
+
+/* .brands:hover{
+    color: white;
+} */
+
+footer{
+   margin-top: 5%;
+}
+
+#copyright{
+    text-align: center;
+    font-weight: 600;
+}
+
+.uparrow{
+    float: right;
+    margin-top: -35px;
+}
+
+/* only html tag can access scroll bar behavior , to transition smooth */
+html{
+    scroll-behavior: smooth;
+
+}
+
+
+/* scroll bar design , to desgin scrollbar , design everthing , otherwise it not appear , it depends on browser */
+::-webkit-scrollbar{
+    width: 10px;
+}
+/* scroll track */
+::-webkit-scrollbar-track{
+    background-color: aliceblue;
+}
+
+/* scroll thumb */
+::-webkit-scrollbar-thumb{
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+/* hosting sites  */
+/* netlify */
+
+/* git and github */
+/* git commands */
+/* git status , for check the git status in folder */
+/* git init , command for make a repository for git working */
+/* git add . ,for add a tracking */
